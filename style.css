@@ -1,0 +1,210 @@
+:root {
+    --primary: #000000;
+    --bg-navbar: #fcfcfc;
+    --bg: #d54343;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 7%;
+    background-color: rgb(255, 255, 255, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  
+  .navbar .navbar-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+    padding-bottom: 20px;
+  }
+  
+  .navbar .navbar-logo span {
+    font-style: italic;
+    color: var(--bg);
+  }
+  
+  .navbar .navbar-nav a {
+    color: var(--primary);
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1rem;
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: var(--bg);
+  }
+  
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--bg);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+  
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+
+.latihan {
+    background: #fff;
+    padding: 10px 50px 30px;
+    margin-top: 20vh;
+    margin-left: 15vh;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+select, button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    font-family: "Poppins";
+    font-size: mediums;
+}
+
+button:hover {
+    background-color: var(--bg);
+    color: #fff;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: large;
+}
+
+h1 {
+  margin-left: 100px;
+  margin-top: 100px;
+  padding-top: 20vh;
+}
+
+.bmi-calculator {
+  background-color: #fff;
+  padding: 10px 50px 30px;
+  margin-left: 15vh;
+  margin-bottom: 10vh;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+}
+
+.bmi-calculator label {
+  display: block;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.bmi-calculator input {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.container {
+  padding: 50px;
+  max-width: 1000px;
+  margin: 200px;
+  margin-bottom: 100px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 120px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-container {
+  padding: 50px;
+  padding-top: 20px;
+  width: 130%;
+  margin: 200px;
+  margin-bottom: 100px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 120px;
+  border-radius: 20px;
+  align-items: center;
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: flex;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
