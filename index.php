@@ -113,7 +113,7 @@ $bmiCalculator = new BMICalculator($weight, $height);
         <h2>Rencana Latihan</h2>
         <label for="workout">Pilih Latihan Hari Ini:</label>
         <select name="workout" id="workout">
-            <option value="leg">Leg Day</option>
+            <option value="leg">Leg Day (Leg, Calf, & Glutes)</option>
             <option value="push">Push Day (Chest, Tricep, & Shoulders)</option>
             <option value="pull">Pull Day (Back & Biceps)</option>
         </select>
