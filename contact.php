@@ -21,7 +21,7 @@
 </nav>
     <div class="contact-container">
         <h2>Kontak Kami</h2>
-        <form action="contact.php" method="post">
+        <form class="contact-form" action="contact.php" method="post">
             <div class="form-group">
                 <label for="name">Nama:</label>
                 <input type="text" id="name" name="name" required>
@@ -34,7 +34,7 @@
                 <label for="message">Pesan:</label>
                 <textarea id="message" name="message" required></textarea>
             </div>
-            <button type="submit">Kirim</button>
+            <button type="submit" style="width:1000px">Kirim</button>
         </form>
 
         <?php
@@ -44,7 +44,7 @@
             $message = htmlspecialchars($_POST['message']);
 
             // Proses pengiriman email atau penyimpanan pesan
-            echo "<p>Terima kasih, $name. Pesan Anda telah diterima.</p>";
+            echo "Terima kasih, $name. Pesan Anda telah diterima.";
         }
         ?>
     </div>

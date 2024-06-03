@@ -173,20 +173,26 @@ h1 {
 
 .contact-container {
   padding: 50px;
-  padding-top: 20px;
-  width: 130%;
+  width: 1000px;
   margin: 200px;
   margin-bottom: 100px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 120px;
   border-radius: 20px;
+  justify-content: center;
   align-items: center;
+}
+
+.contact-form {
+  width: 1000px; /* atau ukuran tetap seperti 500px */
+  max-width: 600px; /* Atur sesuai kebutuhan */
 }
 
 
 .form-group {
   margin-bottom: 15px;
+  width: 1000px;
 }
 
 .form-group label {
@@ -197,7 +203,7 @@ h1 {
 
 .form-group input,
 .form-group textarea {
-  width: 100%;
+  width: 1000px;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;

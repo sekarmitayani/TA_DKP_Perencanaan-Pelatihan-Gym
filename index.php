@@ -133,9 +133,9 @@ $bmiCalculator = new BMICalculator($weight, $height);
     <h2>Kalkulator BMI</h2>
     <form method="POST">
         <label for="height">Tinggi Badan (cm):</label>
-        <input type="number" id="height" name="height">
+        <input type="number" id="height" name="height" value="<?php echo isset($_POST['height']) ? $_POST['height'] : ''; ?>" required>
         <label for="weight">Berat Badan (kg):</label>
-        <input type="number" id="weight" name="weight">
+        <input type="number" id="weight" name="weight" value="<?php echo isset($_POST['weight']) ? $_POST['weight'] : ''; ?>" required>
         <button type="submit">Hitung BMI</button>
     </form>
     <?php
